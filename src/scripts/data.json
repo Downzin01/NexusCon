@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "tituloLogo": "<span class=\"texto-gradiente\"><strong>NEXUS</strong>CON25</span>",
+    "titulo": "O Evento Geek do Ano!",
+    "paragrafo": "Anime, games e tecnologia em um só lugar! Junte-se à NexusCon 2025 e viva a experiência geek definitiva com cosplays incríveis, torneios e muito mais.",
+    "caminhoImagem": "./src/images/banner-1.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Torneios e Competição de Games",
+    "paragrafo": "Desafie seus amigos e participe de emocionantes torneios de games! A NexusCon oferece uma programação repleta de competições de jogos populares, com prêmios incríveis e muita diversão.",
+    "caminhoImagem": "./src/images/banner-2.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Tecnologia e Inovação Geek",
+    "paragrafo": "Explore as últimas inovações tecnológicas com uma abordagem geek! A NexusCon traz o que há de mais novo em gadgets, dispositivos e novidades da indústria tech, tudo com um toque nerd.",
+    "caminhoImagem": "./src/images/banner-3.jpg"
+  }
+]
