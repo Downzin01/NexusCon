@@ -1,0 +1,117 @@
+.carrossel {
+    height: 100dvh; /* Ajusta a altura para 100% da tela visível */
+    position: relative;
+    object-fit: cover;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 80%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 1;
+}
+
+.carrossel__banner-texto {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--cor-texto-claro);
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 4rem;
+    gap: 8px;
+    width: 70%;
+    z-index: 2;
+}
+
+.texto-gradiente {
+    background: linear-gradient(
+        to right,
+        rgb(112, 255, 255) 0%,
+        rgb(148, 119, 252) 58%,
+        rgb(251, 132, 195) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    text-shadow:
+        3px 3px 10px rgba(112, 255, 255, 0.3),
+        0 0 20px rgba(251, 132, 195, 0.3);
+    font-weight: 400;
+}
+
+.texto-gradiente strong {
+    font-weight: 800;
+}
+
+.carrossel__banner-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.carrossel__banner-texto h2 {
+    text-shadow: 2px 2px rgba(24, 24, 24, 0.8);
+}
+
+.carrossel__banner-texto p {
+    font-family: var(--font-texto);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+    text-shadow: 1px 1px rgba(24, 24, 24, 0.8);
+    margin: 0 10%;
+}
+
+.swiper-pagination-bullet {
+    background: var(--cor-texto-claro);
+    width: 12px;
+    height: 12px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--cor-principal);
+    width: 20px;
+    border-radius: 16px;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(117, 191, 252, 0.8);
+}
+
+.swiper-pagination-progressbar {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.swiper-pagination-progressbar-fill {
+    background: #75bffc;
+}
+
+.swiper-pagination {
+    bottom: 20px;
+    text-align: center;
+}
+
+.swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
